@@ -1,17 +1,18 @@
 #include "main.h"
 /**
 * jack_bauer - prints 24hrs time
-* Return: always 0
 */
 
 void jack_bauer(void);
 {
-	int i;
-	int j;
-
-	for (i = 0 ; i < 24 ; i++)
+	int i , j;
 	{
-		for (j = 0 ; j < 60 ; j++)
+
+	i = 0;
+	while (i < 24)
+	
+		j = 0;
+		while (j < 60)
 		{
 			_putchar(i / 10 + '0');
 			_putchar(i % 10 + '0');
@@ -19,6 +20,8 @@ void jack_bauer(void);
 			_putchar(j / 10 + '0');
 			_putchar(j % 10 + '0');
 			_putchar('\n');
+			j++;
 		}
+		i++;
 	}
 }
